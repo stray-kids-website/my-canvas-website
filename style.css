@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #991b1b, #111827);
+    padding: 25px 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+.hero {
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(#0009, #000b),
+        url("https://placehold.co/1400x700/450a0a/ffffff?text=POWER+RANGERS+SAMURAI")
+        center/cover no-repeat;
+    padding: 30px;
+}
+
+.hero h2 {
+    color: #facc15;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: #dc2626;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #facc15;
+    color: black;
+}
+
+section {
+    padding: 45px 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #facc15;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.ranger-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    padding: 0 12px;
+}
+
+.red { background: #991b1b; }
+.blue { background: #1d4ed8; }
+.green { background: #15803d; }
+.yellow { background: #a16207; }
+.pink { background: #be185d; }
+
+.about {
+    background: #1f2937;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about h2 {
+    color: #facc15;
+    margin-bottom: 15px;
+}
+
+.about button {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#message {
+    color: #facc15;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #030712;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
